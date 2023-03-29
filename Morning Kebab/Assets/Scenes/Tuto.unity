@@ -5339,7 +5339,7 @@ GameObject:
   - component: {fileID: 1408371797}
   m_Layer: 0
   m_Name: MCStand_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5507,7 +5507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 2
   jumpSpeed: 3
-  betterJump: 0
+  betterJump: 1
   fallMultipiler: 0.5
   lowJumpMultipiler: 1
 --- !u!1 &1485565210
@@ -5565,7 +5565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1612200611
 Animator:
   serializedVersion: 3
@@ -5823,6 +5823,7 @@ GameObject:
   - component: {fileID: 1697119773}
   - component: {fileID: 1697119772}
   - component: {fileID: 1697119774}
+  - component: {fileID: 1697119775}
   m_Layer: 0
   m_Name: MiniKebab
   m_TagString: Untagged
@@ -5917,10 +5918,22 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 0.10302412, y: 0.14100811}
   m_EdgeRadius: 0
+--- !u!114 &1697119775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697119771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489325ddb3d6959429ee8dafea0ad288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &1928755501
 Sprite:
   m_ObjectHideFlags: 0
