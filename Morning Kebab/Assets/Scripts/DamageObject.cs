@@ -2,11 +2,12 @@
 
 public class DamageObject : MonoBehaviour
 {
-    public static bool isKebab;
+    [SerializeField] private float damage;
+
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("Player")) {
-            Destroy(collision.gameObject);
+            collision.GetComponent<Health>().TakeDamage(damage);
         }
     }
 }

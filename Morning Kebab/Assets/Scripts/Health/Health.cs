@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
+    private bool dead;
 
     private void Awake() {
         currentHealth = startingHealth;
@@ -16,16 +17,18 @@ public class Health : MonoBehaviour
 
         if(currentHealth > 0) {
             // Player hurt
+            // iframes
 
         } else {
             // Player dead
+            if (!dead) {
+                Destroy(gameObject);
+                dead = true;
+            }
         }
     }
 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.E)) {
-            TakeDamage(1);
-        }
-
+    public void RestoreHealth(float _health){
+        currentHealth = Mathf.Clamp(currentHealth + _health, 0, startingHealth);
     }
 }
