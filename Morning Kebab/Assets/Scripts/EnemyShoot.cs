@@ -6,6 +6,7 @@ public class EnemyShoot : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPos;
+    public float shootDelay = 2;
 
     private float timer;
     private GameObject player;
@@ -23,7 +24,7 @@ public class EnemyShoot : MonoBehaviour
         if(distance < 3.5) {
             timer += Time.deltaTime;
 
-            if(timer > 2){
+            if(timer > shootDelay){
                 timer = 0;
                 shoot();
             }
