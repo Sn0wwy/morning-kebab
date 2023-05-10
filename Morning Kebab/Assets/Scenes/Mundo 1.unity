@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 281072715}
   - component: {fileID: 281072714}
   - component: {fileID: 281072719}
+  - component: {fileID: 281072720}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Enemy
@@ -419,6 +420,25 @@ MonoBehaviour:
   speed: 0.8
   range: 1
   vertical: 1
+--- !u!95 &281072720
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281072713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 79829c5072a43b849b8f1b6c877fdc12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &384876081
 GameObject:
   m_ObjectHideFlags: 0
