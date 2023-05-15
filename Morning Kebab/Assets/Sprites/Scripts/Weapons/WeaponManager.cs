@@ -43,6 +43,12 @@ public class WeaponManager : MonoBehaviour
             RuntimeAnimatorController animClip = Resources.Load<RuntimeAnimatorController>("PakoWithShotgun");
             GetComponent<Animator>().runtimeAnimatorController = animClip;
         }
+        if(weapon is LaserPistol)
+        {
+            weapon.gameObject.GetComponent<Renderer>().enabled = false;
+            RuntimeAnimatorController animClip = Resources.Load<RuntimeAnimatorController>("pakoWithLaserPistolAnimator");
+            GetComponent<Animator>().runtimeAnimatorController = animClip;
+        }
 
         weapon.transform.position = this.weaponHolder.position;
         weapon.transform.rotation= this.weaponHolder.rotation;

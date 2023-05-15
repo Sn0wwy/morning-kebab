@@ -22,6 +22,10 @@ public class Projectile : MonoBehaviour
         if (other.gameObject.GetComponent<EnemyShoot>() != null)
         {
             other.gameObject.SetActive(false);
+            if(weapon is ShotGun)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 }
