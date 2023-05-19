@@ -20,7 +20,7 @@ public class Camera : MonoBehaviour
         {
             Vector3 position = transform.position;
             position.x = Player.position.x;
-            position.y = Player.position.y+0.3f;
+            position.y = Player.position.y + 0.3f;
             transform.position = position;
         }
     }
