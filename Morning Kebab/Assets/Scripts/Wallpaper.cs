@@ -19,6 +19,7 @@ public class Wallpaper : MonoBehaviour
         {
             Vector3 position = transform.position;
             position.x = Player.position.x;
+            position.y = Player.position.y ;
             transform.position = position;
         }
     }

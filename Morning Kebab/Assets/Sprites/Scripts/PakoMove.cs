@@ -9,7 +9,7 @@ public class PakoMove : MonoBehaviour
 
     public float runSpeed = 2;
     public float jumpSpeed = 3;
-    public bool betterJump = false;
+    public bool betterJump = true;
 
     Rigidbody2D rd2D;
     SpriteRenderer tr2D;
