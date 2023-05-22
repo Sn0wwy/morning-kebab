@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: f84814c1984a4714f8eff8da5432e4a4
+guid: 5ab65a20b073af74ba7387ae347dcfa1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3296465417693958948
-    second: MCStand_0
+      213: 7956564465604797286
+    second: NMYAlien_0
   - first:
-      213: -9037200527697461225
-    second: MCStand_1
+      213: -6036854602086863581
+    second: NMYAlien_1
   - first:
-      213: 1929670669888617910
-    second: MCStand_2
+      213: 9154592781257721991
+    second: NMYAlien_2
+  - first:
+      213: -2671257381271971980
+    second: NMYAlien_3
+  - first:
+      213: -8382468626251223586
+    second: NMYAlien_4
+  - first:
+      213: -411921734853213458
+    second: NMYAlien_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MCStand_0
+      name: NMYAlien_0
       rect:
         serializedVersion: 2
         x: 7
         y: 0
         width: 16
-        height: 30
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 423120cf4d56fbd20800000000000000
-      internalID: 3296465417693958948
+      spriteID: 663aedcc9356b6e60800000000000000
+      internalID: 7956564465604797286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MCStand_1
+      name: NMYAlien_1
       rect:
         serializedVersion: 2
         x: 39
         y: 0
         width: 16
-        height: 29
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 710ce9e400a659280800000000000000
-      internalID: -9037200527697461225
+      spriteID: 32d2ee959b8c83ca0800000000000000
+      internalID: -6036854602086863581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MCStand_2
+      name: NMYAlien_2
       rect:
         serializedVersion: 2
         x: 71
         y: 0
         width: 16
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +173,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd733c104197ca10800000000000000
-      internalID: 1929670669888617910
+      spriteID: 788c836a1a5ab0f70800000000000000
+      internalID: 9154592781257721991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYAlien_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477d4ad8099cdead0800000000000000
+      internalID: -2671257381271971980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYAlien_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd6077523d7bab80800000000000000
+      internalID: -8382468626251223586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYAlien_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2cfc65d5f884af0800000000000000
+      internalID: -411921734853213458
       vertices: []
       indices: 
       edges: []

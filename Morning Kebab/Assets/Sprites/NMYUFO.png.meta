@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: f84814c1984a4714f8eff8da5432e4a4
+guid: 37f54cd24f4a2fa4a9f913608ec91d3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3296465417693958948
-    second: MCStand_0
+      213: -6011700828700217489
+    second: NMYUFO_0
   - first:
-      213: -9037200527697461225
-    second: MCStand_1
+      213: -8288730302367322476
+    second: NMYUFO_1
   - first:
-      213: 1929670669888617910
-    second: MCStand_2
+      213: -3207919521055980634
+    second: NMYUFO_2
+  - first:
+      213: -2636272382752928419
+    second: NMYUFO_3
+  - first:
+      213: 7539313254150164068
+    second: NMYUFO_4
+  - first:
+      213: -1553567727787935239
+    second: NMYUFO_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MCStand_0
+      name: NMYUFO_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 16
-        height: 30
+        x: 1
+        y: 5
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 423120cf4d56fbd20800000000000000
-      internalID: 3296465417693958948
+      spriteID: f6fe66992f5229ca0800000000000000
+      internalID: -6011700828700217489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MCStand_1
+      name: NMYUFO_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 16
-        height: 29
+        x: 33
+        y: 5
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 710ce9e400a659280800000000000000
-      internalID: -9037200527697461225
+      spriteID: 49e2160a4b388fc80800000000000000
+      internalID: -8288730302367322476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MCStand_2
+      name: NMYUFO_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 0
-        width: 16
-        height: 30
+        x: 65
+        y: 5
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +173,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd733c104197ca10800000000000000
-      internalID: 1929670669888617910
+      spriteID: 6a3ca6f113e2b73d0800000000000000
+      internalID: -3207919521055980634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYUFO_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 6
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dc6d64c341a6bd0800000000000000
+      internalID: -2636272382752928419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYUFO_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 5
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ec30ca57501a860800000000000000
+      internalID: 7539313254150164068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NMYUFO_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 5
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f970baf16e907ae0800000000000000
+      internalID: -1553567727787935239
       vertices: []
       indices: 
       edges: []
