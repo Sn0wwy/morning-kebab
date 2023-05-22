@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckGround : MonoBehaviour
 {
     public static bool isGrounded;
+    private float timer;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,5 +15,11 @@ public class CheckGround : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isGrounded = false;
+        timer += Time.deltaTime;
+
+        if(timer > 2){
+            timer = 0;
+            isGrounded = true;
+        }
     }
 }
