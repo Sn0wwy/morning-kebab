@@ -15,12 +15,14 @@ public class ShotGun : GunWeapon
 
     protected override void Shot(Vector3 position, Vector3 direction)
     {
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
         float angle = (Mathf.Atan2(direction.y,direction.x) * Mathf.Rad2Deg)-90;
         var rotation = Quaternion.Euler(0,0,angle);
 
         var bullet = Instantiate(this.projectile,position,rotation);
 
-        bullet.transform.rotation = Quaternion.Euler(0, 0, -183); ;
+        bullet.transform.rotation = Quaternion.Euler(0, 0, 0); 
 
         bullet.GetComponent<SpriteRenderer>().sortingOrder = 1;
 
@@ -44,7 +46,7 @@ public class ShotGun : GunWeapon
 
     IEnumerator WaitAndDestroy(GameObject bullet)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(bullet);
     }
 

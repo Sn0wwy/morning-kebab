@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [Header ("Health")]
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private bool dead;
 
+    [Header ("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numberOfFlashes;
+    private SpriteRenderer spriteRend;
+
     private void Awake() {
         currentHealth = startingHealth;
+        spriteRend = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(float _damage){
@@ -17,6 +24,7 @@ public class Health : MonoBehaviour
 
         if(currentHealth > 0) {
             // Player hurt
+            StartCoroutine(Invulnerability());
             // iframes
 
         } else {
@@ -30,5 +38,16 @@ public class Health : MonoBehaviour
 
     public void RestoreHealth(float _health){
         currentHealth = Mathf.Clamp(currentHealth + _health, 0, startingHealth);
+    }
+
+    private IEnumerator Invulnerability() {
+        for (int i = 0; i < numberOfFlashes; i++){
+            spriteRend.color = new Color(1,1,1, 0.55f);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+            spriteRend.color = Color.white;
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+            
+        }
+
     }
 }

@@ -19,9 +19,18 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<EnemyShoot>() != null)
-        {
-            other.gameObject.SetActive(false);
+        if (other.CompareTag("Boss")) {
+            other.GetComponent<Health>().TakeDamage(1);
+        } else {
+
+            if (other.gameObject.GetComponent<EnemyShoot>() != null)
+            {
+                other.gameObject.SetActive(false);
+                if(weapon is ShotGun)
+                {
+                    Destroy(this.gameObject);
+                }
+            }
         }
     }
 }

@@ -18,6 +18,10 @@ public abstract class GunWeapon : Weapon
 
     protected override void OnActivate()
     {
+        if(this is LaserPistol)
+        {
+            this.currentAmmo = this.maxAmmo;
+        }
         if (this.currentAmmo == 0)
             return;
         //shotPoint = new Transform(new Vector3(1, 2, 3), Quaternion.Euler(0, 45, 0));
