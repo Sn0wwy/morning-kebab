@@ -46,7 +46,7 @@ public class ShotGun : GunWeapon
 
     IEnumerator WaitAndDestroy(GameObject bullet)
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.6f);
         Destroy(bullet);
     }
 
