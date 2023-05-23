@@ -13,6 +13,9 @@ public class WeaponManager : MonoBehaviour
 
     public bool hasRoomForWeapon => this.currentWeapon == null;
 
+    [SerializeField] private float cantidadPuntos;
+    [SerializeField] private Puntaje puntaje;
+
     void Start()
     {
       
@@ -55,6 +58,7 @@ public class WeaponManager : MonoBehaviour
         weapon.transform.SetParent(this.weaponHolder);
 
         this.currentWeapon = weapon;
+        puntaje.SumarPuntos(cantidadPuntos);
     }
 
 }

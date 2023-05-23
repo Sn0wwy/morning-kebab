@@ -6,7 +6,6 @@ public class WeaponItem : MonoBehaviour
 {
     public GameObject weaponPrefab;
 
-
     void Start()
     {
         Invoke("ActivePickUpMode", 1f);
@@ -15,7 +14,6 @@ public class WeaponItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,9 +21,8 @@ public class WeaponItem : MonoBehaviour
         WeaponManager manager= other.GetComponent<WeaponManager>();
         var newWeapon = Instantiate(this.weaponPrefab);
         manager.pickUpWeapon(newWeapon.GetComponent<Weapon>());
-
         Destroy(this.gameObject);
-
+        
     }
 
 }

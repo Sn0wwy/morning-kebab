@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     [Header ("iFrames")]
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
+    [SerializeField] private float cantidadPuntos;
+    [SerializeField] private Puntaje puntaje;
     private SpriteRenderer spriteRend;
 
     private void Awake() {
@@ -21,8 +23,8 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage){
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-
-        if(currentHealth > 0) {
+        puntaje.RestarPuntos(cantidadPuntos);
+        if (currentHealth > 0) {
             // Player hurt
             StartCoroutine(Invulnerability());
             // iframes

@@ -11,6 +11,9 @@ public class Projectile : MonoBehaviour
     [HideInInspector]
     public Weapon weapon;
 
+    [SerializeField] private float cantidadPuntos;
+    [SerializeField] private Puntaje puntaje;
+
     void awake()
     {
         var body = this.GetComponent<Rigidbody2D>();
@@ -29,6 +32,7 @@ public class Projectile : MonoBehaviour
                 if(weapon is ShotGun)
                 {
                     Destroy(this.gameObject);
+                    puntaje.SumarPuntos(cantidadPuntos);
                 }
             }
         }
