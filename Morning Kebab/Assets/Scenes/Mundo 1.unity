@@ -3918,6 +3918,11 @@ PrefabInstance:
       objectReference: {fileID: 1542722249}
     - target: {fileID: 2649774878226644901, guid: 230ff2888e4f88e43b0ba2cacb69ae3e,
         type: 3}
+      propertyPath: maxCooldownTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649774878226644901, guid: 230ff2888e4f88e43b0ba2cacb69ae3e,
+        type: 3}
       propertyPath: weaponItemPrefab
       value: 
       objectReference: {fileID: 193440691}
@@ -5987,7 +5992,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d542271359da7c4fb801ebaf922ed50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c4e29646af326ce4bbd513f6bfefdbe5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
